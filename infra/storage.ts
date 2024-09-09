@@ -12,7 +12,7 @@ export const table = new sst.aws.Dynamo("AllergenEntries", {
   },
   primaryIndex: { hashKey: "userId", rangeKey: "entryId" },
   globalIndexes: {
-    DateIndex: { hashKey: "date" },  // GSI for 'date'
+    DateIndex: { hashKey: "date" },
     SeverityIndex: { hashKey: "severity" },  // GSI for 'severity'  // GSI for 'triggeringList'
   },
 });
