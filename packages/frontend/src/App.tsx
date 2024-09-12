@@ -1,21 +1,13 @@
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import './App.css'
-import { axiosClient } from './api/apiClient';
-
-
-const { VITE_API_URL } = import.meta.env;
+// import { axiosClient } from './api/apiClient'
+import RegisterForm from './components/RegisterForm';
 
 function App() {
-  console.log("API URL: " + VITE_API_URL);
-  useEffect(() => {
-    (async () => {
-      const response = await axiosClient.get("/0c20dea0-6e04-11ef-a648-bb8150a8dc48");
-      console.log("Data: " + response.data.triggeringList);
-    })();
-  });
 
   return (
     <>
+      <RegisterForm />
       <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>
