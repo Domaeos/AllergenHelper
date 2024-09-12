@@ -9,6 +9,7 @@ interface ITextSectionProps {
   value: string,
   name: string,
   type?: string,
+  onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
 }
 
