@@ -1,6 +1,5 @@
-import axios from 'axios';
-import { axiosClient } from '../api/apiClient'; // Adjust the import according to your file structure
-import {describe, beforeEach, afterEach, test, expect} from "vitest";
+import axiosClient from '@/api/apiClient';
+import {describe, test, expect} from "vitest";
 
 describe('axiosClient', () => {
   test('should have the correct base URL', () => {

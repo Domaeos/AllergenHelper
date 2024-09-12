@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-// Define a generic form hook that accepts any shape of form values
 const useForm = <T extends Record<string, any>>(initialValues: T) => {
   const [values, setValues] = useState<T>(initialValues);
 
